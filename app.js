@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const postsRoutes = require("./api/posts/posts.routes");
 const connectDb = require("./database");
-const notFoundHandler = require("./midlewere/notfoundhandle");
-const errorHandler = require("./midlewere/errorhandle");
+const notFoundHandler = require("./middlewere/notFoundHandle");
+const errorHandler = require("./middlewere/errorHandle");
 
 connectDb();
 app.use(express.json());
